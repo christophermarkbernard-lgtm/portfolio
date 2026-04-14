@@ -18,6 +18,11 @@
     </nav>
 
     <header class="case-hero">
+        <div class="case-hero-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
+            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="../chrisbernard-me-site/unify-video.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="case-hero-content">
             <span class="case-category">Product Design</span>
             <h1>Converging the Application Suite</h1>
@@ -45,17 +50,29 @@
     <main class="case-content">
         <section>
             <h2>The Problem</h2>
-            <p>CDK's legacy dealer management system, Drive, was fragmented across dozens of disconnected applications. Our audit uncovered that dealers faced 58 different login screens, each with its own authentication and design language.</p>
+            <p>CDK's legacy dealer management system, Drive, was the backbone of over 15,000 dealerships. It was powerful, but decades of acquisitions and bolt-on products had created a fragmented experience. Dealers weren't using one product. They were navigating dozens of disconnected applications with inconsistent interfaces, separate credentials, and no shared context between tools.</p>
+        </section>
+
+        <section>
+            <h2>How We Knew</h2>
+            <p>We conducted a formal audit across all CDK applications and uncovered that dealers faced 58 different login screens. Fifty-eight. Each application had its own authentication, its own navigation model, and its own design language. User research confirmed what the audit suggested: dealers were spending significant time just figuring out where to go and how to get in, before they could do any actual work. The fragmentation wasn't just a UX annoyance. It was a drag on productivity and a barrier to selling new products, because every addition made the ecosystem harder to use.</p>
+        </section>
+
+        <section>
+            <h2>What We Explored</h2>
+            <p>The obvious answer was a full rebuild. Retire the legacy stack, build a modern unified product from the ground up. But CDK's product suite was massive and deeply embedded in dealership operations. A full rebuild would have taken years, and during that time customers would be waiting for innovation and new features while engineering focused on reconstruction. We couldn't ask 15,000 dealerships to pause their businesses while we rewrote the platform.</p>
         </section>
 
         <section>
             <h2>What We Shipped</h2>
-            <p>We designed <strong>Unify</strong> as an interface layer that sat on top of the existing infrastructure. Dealers got one login, one workspace, and one consistent interface, without requiring a massive backend rewrite.</p>
-            <p>The experience included customizable workspaces, single sign-on, and a fully responsive mobile experience, proving that complex legacy applications could be modernized through a smart interface layer.</p>
+            <p>We designed <strong>Unify</strong> as an interface layer that sat on top of the existing infrastructure. Every CDK application could function within a single modern experience without requiring data migration or backend rewrites. Dealers got one login, one workspace, and one consistent interface. Under the hood, the legacy systems kept running.</p>
+            <p>The experience included customizable workspaces, single sign-on, light and dark mode, AI-powered customer support, and a fully responsive mobile experience. We also built Drive Flex, which brought the core DMS functionality into the Unify shell, proving that even the oldest and most complex applications could be modernized through the interface layer approach.</p>
         </section>
 
         <section class="case-results">
-            <h2>Results</h2>
+            <h2>How We Knew It Worked</h2>
+            <p>During the beta period, 96% of dealers who were given access actively used it. That wasn't a forced migration metric. That was organic adoption. People who had the option to keep using the old tools chose Unify instead. Going into general availability, that number gave us strong confidence that the approach was right: meet customers where they are, don't make them wait, and let the experience layer do the heavy lifting.</p>
+
             <div class="results-grid">
                 <div class="result-card">
                     <span class="result-value">96%</span>
@@ -63,13 +80,30 @@
                 </div>
                 <div class="result-card">
                     <span class="result-value">58 to 1</span>
-                    <span class="result-label">Login consolidation</span>
+                    <span class="result-label">Login screens consolidated</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-value">15,000+</span>
+                    <span class="result-label">Dealerships served</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-value">Modernized</span>
+                    <span class="result-label">Legacy DMS without migration</span>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="case-footer">
+        <section class="case-gallery">
+            <h2>Orbit Platform Concepts</h2>
+            <p>Exploration of personal AI agents and unified information systems.</p>
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <img src="../spectrum2-design-system/images/patterns/AI Assistant examples.png" alt="AI Agent Interface" style="width: 100%; border-radius: 8px;">
+                <img src="../spectrum2-design-system/images/web-components/App frame (header and side navigation).png" alt="Unified App Shell" style="width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <footer class="case-footer">
         <a href="case-wrigley.html" class="next-project">
             <span class="label">Next Project</span>
             <span class="title">Creating a Destination &rarr;</span>

@@ -45,31 +45,62 @@
     <main class="case-content">
         <section>
             <h2>The Problem</h2>
-            <p>CDK Global had adopted Material Design, but it was a poor fit for high-density enterprise applications. Designers were working around the system, and developers were building custom overrides for every complex component.</p>
+            <p>CDK Global had adopted Material Design as the foundation for its product suite. On paper, it was a reasonable choice. In practice, it was a poor fit. Material Design was optimized for Android mobile-first experiences. CDK's products were high-density enterprise applications for the automotive industry, requiring complex data tables, dense information displays, and sophisticated data visualization. The fork couldn't scale to meet those needs. Designers were working around the system instead of with it, and developers were building custom overrides for nearly every complex component.</p>
+        </section>
+
+        <section>
+            <h2>How We Knew</h2>
+            <p>Engineering teams were shipping slower than expected, and the root cause kept tracing back to the design system. Components didn't exist for common enterprise patterns, so developers were building one-offs. Design inconsistency was spreading across products. Every team was solving the same problems differently because the shared foundation wasn't actually shared. It was a collection of workarounds wearing a Material Design skin.</p>
+        </section>
+
+        <section>
+            <h2>What We Explored</h2>
+            <p>We evaluated existing design systems on the market, including models like IBM's Carbon and Salesforce's Lightning. But the systems available at the time were purpose-built for their own ecosystems and use cases. Automotive enterprise software has specific demands: dealer management workflows, parts inventory tables, financial reporting dashboards, and multi-role interfaces that none of the off-the-shelf systems addressed. We needed something tailored to the domain.</p>
         </section>
 
         <section>
             <h2>What We Shipped</h2>
-            <p>We built two design systems from the ground up. <strong>Radial</strong> was the enterprise system, purpose-built for core products, handling complex data visualization and information density. 100+ components were shipped with comprehensive Figma libraries and React implementations.</p>
-            <p>Following the acquisition of Roadster, we created a companion system optimized for consumer-facing digital retail experiences, enabling rapid rebranding and partner customization.</p>
+            <p>We built two design systems from the ground up. <strong>Radial</strong> was the enterprise system, purpose-built for CDK's core products. It handled data visualization, information density, table manipulation, and complex form patterns that Material Design couldn't support. We shipped 100+ components with comprehensive Figma libraries, React implementations, Storybook documentation, a developer playground, and design token architecture with CSS standards.</p>
+            <p>Following CDK's acquisition of Roadster in 2021, we created a companion system optimized for consumer-facing digital retail experiences: online vehicle purchasing, credit applications, and multi-channel sales tools. Both systems were built with white-label capabilities and robust theming, enabling rapid corporate rebranding and partner customization while maintaining cross-product consistency.</p>
         </section>
 
         <section class="case-results">
-            <h2>Results</h2>
+            <h2>How We Knew It Worked</h2>
+            <p>We measured engineering delivery velocity and development defect rates in before-and-after scenarios. Development speed doubled. Defects dropped by 50%. Beyond the metrics, the qualitative shift was just as telling: teams stopped building custom components and started shipping features. The design system became the foundation rather than the obstacle.</p>
+
             <div class="results-grid">
                 <div class="result-card">
                     <span class="result-value">2x</span>
-                    <span class="result-label">Development speed</span>
+                    <span class="result-label">Development speed increase</span>
                 </div>
                 <div class="result-card">
                     <span class="result-value">50%</span>
                     <span class="result-label">Defect reduction</span>
                 </div>
+                <div class="result-card">
+                    <span class="result-value">100+</span>
+                    <span class="result-label">Components built</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-value">Unified</span>
+                    <span class="result-label">Cross-application consistency</span>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="case-footer">
+        <section class="case-gallery">
+            <h2>Spectrum 2 Design System</h2>
+            <p>Components and patterns from the Spectrum 2 design system, optimized for high-density enterprise applications.</p>
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <img src="../spectrum2-design-system/images/patterns/AI Assistant examples.png" alt="AI Assistant Examples" style="width: 100%; border-radius: 8px;">
+                <img src="../spectrum2-design-system/images/patterns/Shell navigation.png" alt="Shell Navigation" style="width: 100%; border-radius: 8px;">
+                <img src="../spectrum2-design-system/images/web-components/Table.png" alt="Data Table Component" style="width: 100%; border-radius: 8px;">
+                <img src="../spectrum2-design-system/images/charts/Line chart (L).png" alt="Enterprise Charting" style="width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <footer class="case-footer">
         <a href="case-unify.html" class="next-project">
             <span class="label">Next Project</span>
             <span class="title">Converging the Application Suite &rarr;</span>
